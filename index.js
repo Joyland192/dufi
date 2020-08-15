@@ -7,4 +7,10 @@ client.once('ready', () => {
 	client.user.setActivity(`두피쿤                                `);
 });
 
+client.on('message', (message) => {
+	if (message.content = `두피봇`) {
+		message.channel.send(`.`);
+	}
+});
+
 client.login(token);
