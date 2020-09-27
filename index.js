@@ -13,7 +13,7 @@ client.on('message', (message) => {
     	    message.channel.send(`바부`);
 		}
 	}
-	if (message.content.includes (`<@744133186400813136>`)) {
+	if (message.content.includes (`<@!744133186400813136>`)) {
 		message.channel.send(`?`);
 	}
 });
