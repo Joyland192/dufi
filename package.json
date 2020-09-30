@@ -1,9 +1,9 @@
 {
-  "name": "dufi",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "r": "node index.js"
-  }
+    "name": "dufi",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "r": "node index.js"
+    }
 }
