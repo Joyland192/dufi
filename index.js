@@ -1,6 +1,6 @@
 const Discord = require(`discord.js`); // discord.js를 불러옴
 const client = new Discord.Client(); // 새로운 디스코드 클라이언트를 만듬
-const token = process.env.token;
+const token = "NzQ0MTMzMTg2NDAwODEzMTM2.XzeyCA.CAYtzvqRriBlP7bJTGaxSopXYSI";//process.env.token;
 const prefix = '+'
 
 client.once('ready', () => {
