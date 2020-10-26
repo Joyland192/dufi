@@ -75,13 +75,13 @@ client.on('message', (message) => {
 				message.channel.send(`미니다피를 쓰다듬어주기 시작했다!`)
 				.then (message => {
 					setTimeout(function() {
-					message.edit(`미니다피를 쓰다듬어주기 시작했다!\n\n다피쿤의 머리를 쓰다듬는중...`)
+					message.edit(`미니다피를 쓰다듬어주기 시작했다!\n\n미니다피의 머리를 쓰다듬는중...`)
 					}, 3000)
 					setTimeout(function() {
-					message.edit(`미니다피를 쓰다듬어주기 시작했다!\n\n다피쿤의 머리를 쓰다듬는중..\n\n다피쿤의 머리카락이 1 하락했다!`)
+					message.edit(`미니다피를 쓰다듬어주기 시작했다!\n\n미니다피의 머리를 쓰다듬는중..\n\n미니다피의 머리카락이 1 하락했다!`)
 					}, 6000)
 					setTimeout(function() {
-					message.edit(`미니다피를 쓰다듬어주기 시작했다!\n\n다피쿤의 머리를 쓰다듬는중..\n\n다피쿤의 머리카락이 1 하락했다!\n\n어라..? 더이상 하락할 머리카락이 없다...️️️\n🤦‍♂️`)
+					message.edit(`미니다피를 쓰다듬어주기 시작했다!\n\n미니다피의 머리를 쓰다듬는중..\n\n미니다피의 머리카락이 1 하락했다!\n\n어라..? 더이상 하락할 머리카락이 없다...️️️\n🤦‍♂️`)
 					}, 8300)
 				});
 			}
