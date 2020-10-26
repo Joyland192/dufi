@@ -68,6 +68,20 @@ client.on('message', (message) => {
 			}
 		}
 	}
+	if (message.channel.id === '759689892174233611') {
+		if (message.content === `${prefix}다피 키우기`) {
+			message.channel.send(`다피쿤을 쓰다듬어주기 시작했다!`);
+			setTimeout(function(){
+				msg.channel.send(`다피쿤의 머리를 쓰다듬는중...`);
+			}, 200)
+			setTimeout(function(){
+				msg.channel.send(`다피쿤의 머리카락이 1 하락했다!`);
+			}, 1500)
+			setTimeout(function(){
+				msg.channel.send(`어라...? 더이상 하락할 머리가 없다... 🤦‍♂️`);
+			}, 1500)
+		}
+	}
 	if (message.channel.id === '682856541463904256') {
 		if (message.author.id != '744133186400813136') {
 			const tklrole = message.guild.roles.cache.find(role => role.name === '떼껄룩');
