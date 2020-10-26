@@ -74,7 +74,7 @@ client.on('message', (message) => {
 			.then (message => {
 				setTimeout(function() {
 				message.edit(`test`)
-				}, 10000)
+				}, 1500)
 			});
 		}
 	}
