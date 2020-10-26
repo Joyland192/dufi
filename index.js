@@ -75,12 +75,16 @@ client.on('message', (message) => {
 				setTimeout(function() {
 				message.edit(`다피쿤을 쓰다듬어주기 시작했다!\n\n다피쿤의 머리를 쓰다듬는중...`)
 				}, 3000)
-				setTimeout(function() {
-				message.edit(`다피쿤을 쓰다듬어주기 시작했다!\n\n다피쿤의 머리를 쓰다듬는중..\n\n다피쿤의 머리카락이 1 하락했다!`)
-				}, 3000)
-				setTimeout(function() {
-				message.edit(`다피쿤을 쓰다듬어주기 시작했다!\n\n다피쿤의 머리를 쓰다듬는중..\n\n다피쿤의 머리카락이 1 하락했다!\n\n어라..? 더이상 하락할 머리카락이 없다...️️️\n🤦‍♂️`)
-				}, 2300)
+				.then (message => {
+					setTimeout(function() {
+					message.edit(`다피쿤을 쓰다듬어주기 시작했다!\n\n다피쿤의 머리를 쓰다듬는중..\n\n다피쿤의 머리카락이 1 하락했다!`)
+					}, 3000)
+					.then (message => {
+						setTimeout(function() {
+						message.edit(`다피쿤을 쓰다듬어주기 시작했다!\n\n다피쿤의 머리를 쓰다듬는중..\n\n다피쿤의 머리카락이 1 하락했다!\n\n어라..? 더이상 하락할 머리카락이 없다...️️️\n🤦‍♂️`)
+						}, 2300)
+					})
+				})
 			});
 		}
 	}
