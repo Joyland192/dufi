@@ -71,7 +71,7 @@ client.on('message', (message) => {
 	if ((message.channel.id === '759689892174233611') || (message.channel.id === `770211768063754300`)) {
 		if (message.content === `${prefix}다피 키우기`) {
 			message.author.dafigrow = Math.floor(Math.random() * 3) + 1;
-			if (message.author.dafigrow = 1) {
+			if (message.author.dafigrow == 1) {
 				message.channel.send(`미니다피를 쓰다듬어주기 시작했다!`)
 				.then (message => {
 					setTimeout(function() {
@@ -85,7 +85,7 @@ client.on('message', (message) => {
 					}, 8300)
 				});
 			}
-			if (message.author.dafigrow = 2) {
+			if (message.author.dafigrow == 2) {
 				message.channel.send(`미니다피를 굴리기 시작했다!`)
 				.then (message => {
 					setTimeout(function() {
@@ -99,7 +99,7 @@ client.on('message', (message) => {
 					}, 8300)
 				});
 			}
-			if (message.author.dafigrow = 3) {
+			if (message.author.dafigrow == 3) {
 				message.channel.send(`앗, 미니다피가 도망갔다..`)
 			}
 		}
