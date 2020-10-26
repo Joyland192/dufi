@@ -14,7 +14,7 @@ client.on('message', (message) => {
 	const roleroom = client.channels.cache.get('682856541463904256');
 	const defaultname = `두피봇`;
 	const defaultavatarURL = `https://vignette.wikia.nocookie.net/pokemon/images/0/03/%EB%AA%A8%EB%8B%A4%ED%94%BC_%EA%B3%B5%EC%8B%9D_%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8.png/revision/latest/scale-to-width-down/340?cb=20170405013619&path-prefix=ko`
-	if ((message.channel.id == `759689892174233611`) || (message.channel.id == `770211768063754300`)) {
+	if (message.channel.id === `759689892174233611`) {
     	if (message.content === `다바피보`) {
     	    message.channel.send(`바부`);
 		}
@@ -68,7 +68,7 @@ client.on('message', (message) => {
 			}
 		}
 	}
-	if (message.channel.id === '759689892174233611') {
+	if ((message.channel.id === '759689892174233611') || (message.channel.id === `770211768063754300`)) {
 		if (message.content === `${prefix}다피 키우기`) {
 			message.channel.send(`다피쿤을 쓰다듬어주기 시작했다!`);
 			setTimeout(function(){
